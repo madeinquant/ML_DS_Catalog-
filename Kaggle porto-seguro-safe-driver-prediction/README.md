@@ -28,7 +28,7 @@ Things that need to be improved upon-
 
 Learnings -
 1. Train different varieties of Neural Network next time early in the Competition.
-
+--------------------------------------------------
 
 
 
