@@ -19,45 +19,46 @@ In this competition, Intel is partnering with MobileODT to challenge Kagglers to
 - [x] Trained 5 models based on 5 fold cross validation method 
 - [x] Each of the models has the same customized architecture 
 
-    *CNN Architecture*
+
+CNN Architecture
+-----------------------------------------------------------
 3x3 Conv , 64 feature maps,Activation ReLU
 ----------------------------------------------------------- 
-         
- 3x3 Conv , 64 feature maps,Activation ReLU
+3x3 Conv , 64 feature maps,Activation ReLU
 ---------------------------------------------------------- 
-    2x2 MaxPooling 
+2x2 MaxPooling 
 ---------------------------------------------------------- 
- 3x3 Conv , 128 feature maps,Activation ReLU
+3x3 Conv , 128 feature maps,Activation ReLU
 ---------------------------------------------------------- 
- 3x3 Conv , 128 feature maps,Activation ReLU
+3x3 Conv , 128 feature maps,Activation ReLU
 ---------------------------------------------------------- 
- 2x2 MaxPooling 
+2x2 MaxPooling 
 ---------------------------------------------------------- 
- 3x3 Conv , 256 feature maps,Activation ReLU
+3x3 Conv , 256 feature maps,Activation ReLU
 ---------------------------------------------------------- 
- 3x3 Conv , 256 feature maps,Activation ReLU
+3x3 Conv , 256 feature maps,Activation ReLU
 ---------------------------------------------------------- 
- 3x3 Conv , 256 feature maps,Activation ReLU
+3x3 Conv , 256 feature maps,Activation ReLU
 ---------------------------------------------------------- 
- 2x2 MaxPooling 
+2x2 MaxPooling 
 ---------------------------------------------------------- 
- 3x3 Conv , 512 feature maps,Activation ReLU
+3x3 Conv , 512 feature maps,Activation ReLU
 ---------------------------------------------------------- 
- 3x3 Conv , 512 feature maps,Activation ReLU
+3x3 Conv , 512 feature maps,Activation ReLU
 ---------------------------------------------------------- 
- 2x2 MaxPooling 
+2x2 MaxPooling 
 ---------------------------------------------------------- 
-     Flatten
+Flatten
 ---------------------------------------------------------- 
- 512 Dense units, Fully Connected layer, Activation ReLU
+512 Dense units, Fully Connected layer, Activation ReLU
 ---------------------------------------------------------- 
- Dropout 0.5
+Dropout 0.5
 ---------------------------------------------------------- 
- 512 Dense units, Fully Connected layer, Activation ReLU
+512 Dense units, Fully Connected layer, Activation ReLU
 ---------------------------------------------------------- 
- Dropout 0.5
+Dropout 0.5
 ---------------------------------------------------------- 
- Dense 3, Output layer
+Dense 3, Output layer
 ---------------------------------------------------------- 
 
 - [x] Take the average prediction of the 5 models 
