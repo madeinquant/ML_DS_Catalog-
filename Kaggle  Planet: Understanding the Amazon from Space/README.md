@@ -1,5 +1,5 @@
 
-** Description **
+**Description**
 
 
 Every minute, the world loses an area of forest the size of 48 football fields. And deforestation in the Amazon Basin accounts for the largest share, contributing to reduced biodiversity, habitat loss, climate change, and other devastating effects. But better data about the location of deforestation and human encroachment on forests can help governments and local stakeholders respond more quickly and effectively.
@@ -12,25 +12,25 @@ In this competition, Planet and its Brazilian partner SCCON are challenging Kagg
 
 
 
-** Approach **
+**Approach**
 
-** Trained 10 models based on 10 fold cross validation method **
-** Each of the models are of VGG19 architecture **
-** Started with the pretrained imageNet weights and fixed the 1st 10 layers so that they are not trained. Since we have less data don't want to 
+- [x] Trained 10 models based on 10 fold cross validation method
+- [x] Each of the models are of VGG19 architecture 
+- [x] Started with the pretrained imageNet weights and fixed the 1st 10 layers so that they are not trained. Since we have less data don't want to 
    train the layers that learn generic features. The more the layers we train the greater is the chance of overfitting
-** Trained each model with varying learning rate
-** sklearn.metrics.fbeta_score is used to determine the threshold cutoff for each class 
-** If a class is voted by half of the models then that class is set.
+- [x] Trained each model with varying learning rate
+- [x] sklearn.metrics.fbeta_score is used to determine the threshold cutoff for each class 
+- [x] If a class is voted by half of the models then that class is set.
 
 
-Kaggle link to the Competition -
+*Kaggle link to the Competition*
 https://www.kaggle.com/c/planet-understanding-the-amazon-from-space
 
-Kaggle link to the dataset -
+*Kaggle link to the dataset*
 https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/data
 
 
-Kaggle Profile -
+*Kaggle Profile*
 https://www.kaggle.com/santanuds
 
 
