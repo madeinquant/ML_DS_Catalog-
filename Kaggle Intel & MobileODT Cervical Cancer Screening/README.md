@@ -12,6 +12,9 @@ Currently, MobileODT offers a Quality Assurance workflow to support remote super
 
 In this competition, Intel is partnering with MobileODT to challenge Kagglers to develop an algorithm which accurately identifies a woman’s cervix type based on images. Doing so will prevent ineffectual treatments and allow healthcare providers to give proper referral for cases that require more advanced treatment.
 
+In this competition, you will develop algorithms to correctly classify cervix types based on cervical images. These different types of cervix in our data set are all considered normal (not cancerous), but since the transformation zones aren't always visible, some of the patients require further testing while some don't. This decision is very important for the healthcare provider and critical for the patient. Identifying the transformation zones is not an easy task for the healthcare providers, therefore, an algorithm-aided decision will significantly improve the quality and efficiency of cervical cancer screening for these patients. 
+
+To understand more about the background of how these cervix types are defined, please refer to this document. 
 
 
 **Approach**
@@ -20,46 +23,28 @@ In this competition, Intel is partnering with MobileODT to challenge Kagglers to
 - [x] Each of the models has the same customized architecture 
 
 
-CNN Architecture
+**CNN Architecture**
+Layer | Desc
 -----------------------------------------------------------
-3x3 Conv , 64 feature maps,Activation ReLU
------------------------------------------------------------ 
-3x3 Conv , 64 feature maps,Activation ReLU
----------------------------------------------------------- 
-2x2 MaxPooling 
----------------------------------------------------------- 
-3x3 Conv , 128 feature maps,Activation ReLU
----------------------------------------------------------- 
-3x3 Conv , 128 feature maps,Activation ReLU
----------------------------------------------------------- 
-2x2 MaxPooling 
----------------------------------------------------------- 
-3x3 Conv , 256 feature maps,Activation ReLU
----------------------------------------------------------- 
-3x3 Conv , 256 feature maps,Activation ReLU
----------------------------------------------------------- 
-3x3 Conv , 256 feature maps,Activation ReLU
----------------------------------------------------------- 
-2x2 MaxPooling 
----------------------------------------------------------- 
-3x3 Conv , 512 feature maps,Activation ReLU
----------------------------------------------------------- 
-3x3 Conv , 512 feature maps,Activation ReLU
----------------------------------------------------------- 
-2x2 MaxPooling 
----------------------------------------------------------- 
-Flatten
----------------------------------------------------------- 
-512 Dense units, Fully Connected layer, Activation ReLU
----------------------------------------------------------- 
-Dropout 0.5
----------------------------------------------------------- 
-512 Dense units, Fully Connected layer, Activation ReLU
----------------------------------------------------------- 
-Dropout 0.5
----------------------------------------------------------- 
-Dense 3, Output layer
----------------------------------------------------------- 
+Conv Layer |3x3 Filter , 64 feature maps,Activation ReLU
+Conv Layer |3x3 Filter , 64 feature maps,Activation ReLU
+Pooling Layer| 2x2 MaxPooling 
+Conv Layer |3x3 Filter , 128 feature maps,Activation ReLU
+Conv Layer |3x3 Filter , 128 feature maps,Activation ReLU
+Pooling Layer| 2x2 MaxPooling 
+Conv Layer |3x3 Filter , 256 feature maps,Activation ReLU
+Conv Layer |3x3 Filter , 256 feature maps,Activation ReLU
+Conv Layer |3x3 Filter , 256 feature maps,Activation ReLU
+Pooling Layer| 2x2 MaxPooling 
+Conv Layer |3x3 Filter , 512 feature maps,Activation ReLU
+Conv Layer |3x3 Filter , 512 feature maps,Activation ReLU
+Pooling Layer| 2x2 MaxPooling 
+Flatten|Flatten
+FC layer |512 Dense units, Fully Connected layer, Activation ReLU
+Dropout |0.5
+FC layer |512 Dense units, Fully Connected layer, Activation ReLU
+Dropout |0.5
+Output Layer | 3 unit Softmax
 
 - [x] Take the average prediction of the 5 models 
 
