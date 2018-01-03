@@ -24,27 +24,30 @@ To understand more about the background of how these cervix types are defined, p
 
 
 **CNN Architecture**
-Layer | Desc
--------|----------------------------------------------------
-Conv Layer |3x3 Filter , 64 feature maps,Activation ReLU
-Conv Layer |3x3 Filter , 64 feature maps,Activation ReLU
-Pooling Layer| 2x2 MaxPooling 
-Conv Layer |3x3 Filter , 128 feature maps,Activation ReLU
-Conv Layer |3x3 Filter , 128 feature maps,Activation ReLU
-Pooling Layer| 2x2 MaxPooling 
-Conv Layer |3x3 Filter , 256 feature maps,Activation ReLU
-Conv Layer |3x3 Filter , 256 feature maps,Activation ReLU
-Conv Layer |3x3 Filter , 256 feature maps,Activation ReLU
-Pooling Layer| 2x2 MaxPooling 
-Conv Layer |3x3 Filter , 512 feature maps,Activation ReLU
-Conv Layer |3x3 Filter , 512 feature maps,Activation ReLU
-Pooling Layer| 2x2 MaxPooling 
-Flatten|Flatten
-FC layer |512 Dense units, Fully Connected layer, Activation ReLU
-Dropout |0.5
-FC layer |512 Dense units, Fully Connected layer, Activation ReLU
-Dropout |0.5
-Output Layer | 3 unit Softmax
+Layer name | Desc
+-----------|-----------------------------------------------
+Conv | 3x3 Filter,64 feature maps,Activation ReLU
+Conv | 3x3 Filter,64 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling 
+Conv | 3x3 Filter,128 feature maps,Activation ReLU
+Conv | 3x3 Filter,128 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Conv | 3x3 Filter,256 feature maps,Activation ReLU
+Conv | 3x3 Filter,256 feature maps,Activation ReLU
+Conv | 3x3 Filter,256 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Flatten| Flatten 
+FC Layer|512 Dense units, Fully Connected layer, Activation ReLU
+Dropout|0.5
+FC Layer|512 Dense units, Fully Connected layer, Activation ReLU
+Dropout|0.5
+Output layer|3 units Softmax 
 
 - [x] Take the average prediction of the 5 models 
 
