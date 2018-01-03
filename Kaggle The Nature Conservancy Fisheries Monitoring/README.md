@@ -29,29 +29,31 @@ The dataset was compiled by The Nature Conservancy in partnership with Satlink, 
 
 
 
-CNN Architecture
-----------------------------------------------------------
-3x3 Conv , 64 feature maps,Activation ReLU
-3x3 Conv , 64 feature maps,Activation ReLU
-2x2 MaxPooling 
-3x3 Conv , 128 feature maps,Activation ReLU
-3x3 Conv , 128 feature maps,Activation ReLU
-2x2 MaxPooling 
-3x3 Conv , 256 feature maps,Activation ReLU
-3x3 Conv , 256 feature maps,Activation ReLU
-2x2 MaxPooling 
-3x3 Conv , 512 feature maps,Activation ReLU
-3x3 Conv , 512 feature maps,Activation ReLU
-2x2 MaxPooling 
-3x3 Conv , 512 feature maps,Activation ReLU
-3x3 Conv , 512 feature maps,Activation ReLU
-2x2 MaxPooling 
-Flatten
-256 Dense units, Fully Connected layer, Activation ReLU
-Dropout 0.5
-256 Dense units, Fully Connected layer, Activation ReLU
-Dropout 0.5
-Dense 8, Output layer(Softmax Layer)
+**CNN Architecture**
+
+Layer name | Desc
+-----------|-----------------------------------------------
+Conv | 3x3 Filter,64 feature maps,Activation ReLU
+Conv | 3x3 Filter,64 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling 
+Conv | 3x3 Filter,128 feature maps,Activation ReLU
+Conv | 3x3 Filter,128 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Conv | 3x3 Filter,256 feature maps,Activation ReLU
+Conv | 3x3 Filter,256 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Conv | 3x3 Filter,512 feature maps,Activation ReLU
+Pool | 2x2 MaxPooling
+Flatten| Flatten 
+FC Layer|256 Dense units, Fully Connected layer, Activation ReLU
+Dropout|0.5
+FC Layer|256 Dense units, Fully Connected layer, Activation ReLU
+Dropout|0.5
+Output layer|8 units Softmax 
 
 - [x] Take the average prediction of the 5 models 
 
