@@ -24,6 +24,8 @@ To understand more about the background of how these cervix types are defined, p
 
 
 **CNN Architecture**
+
+
 Layer name | Desc
 -----------|-----------------------------------------------
 Conv | 3x3 Filter,64 feature maps,Activation ReLU
