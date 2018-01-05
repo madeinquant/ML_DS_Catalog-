@@ -12,7 +12,7 @@ Generated Images during the Training Process
 
  
 
-![Alt Text](http://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN for MNIST/DCGAN_MNIST_training_images_evolution/gan_mnist.gif)
+![Alt Text](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN%20for%20MNIST/DCGAN_MNIST_training_images_evolution/gan_mnist.gif)
 
 
 *Author*
