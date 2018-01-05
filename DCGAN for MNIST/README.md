@@ -7,7 +7,7 @@ The solution is the Nash equilibrium which is basically a Saddle point with resp
 
 Generated Images during the Training Process 
 
-![alt text](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN%20for%20MNIST/DCGAN%20MNIST%20training%20images%20evolution/gan_mnist.gif)
+![alt tag](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN%20for%20MNIST/DCGAN%20MNIST%20training%20images%20evolution/gan_mnist.gif)
 
 
 
