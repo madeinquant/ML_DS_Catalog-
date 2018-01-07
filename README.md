@@ -21,15 +21,15 @@
 
 Chapter | Topics 
 --------|---------
-*Chapter 2* |Regression and Classification and XOR Networks with ANNs
-*Chapter 3* |Concolutional Neural Netowork   
-*Chapter 4* | Recurrent Neural Netowork
-*Chapter 5* | Restricted Boltzmann Machines and Auto Encoders
-*Chapter 6* | Semantic Segmentation and U-Net Architectures, GANs(generative Adversarial networks)
+*Chapter 2* |[Regression and Classification and XOR Networks with ANNs](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/pro-deep-learning-w-tensorflow-master/9781484230954/Chapter2.ipynb)
+*Chapter 3* |[Concolutional Neural Netowork](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/pro-deep-learning-w-tensorflow-master/9781484230954/Chapter3.ipynb)   
+*Chapter 4* |[Recurrent Neural Netowork](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/pro-deep-learning-w-tensorflow-master/9781484230954/Chapter4.ipynb)
+*Chapter 5* |[Restricted Boltzmann Machines and Auto Encoders](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/pro-deep-learning-w-tensorflow-master/9781484230954/Chapter5.ipynb)
+*Chapter 6* |[Semantic Segmentation and U-Net Architectures, GANs(generative Adversarial networks)](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/pro-deep-learning-w-tensorflow-master/9781484230954/Chapter6.ipynb)
 
 
 
-- [x] Research Paper on Process Performance Optimization using Taylor Series Expectation approximation
+- [x] [Research Paper on Process Performance Optimization using Taylor Series Expectation approximation](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Research%20Paper%20on%20Process%20Performance%20Optimization%20using%20Taylor%20Series%20Expectation%20approximation)
 
 
 
