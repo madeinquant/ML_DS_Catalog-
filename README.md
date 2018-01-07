@@ -18,14 +18,17 @@
 - [x] Kaggle The Nature Conservancy Fisheries Monitoring
 
 - [x] *Pro Deep Learning with Tensorflow* book Code
-      - [x]  *Chapter 2* - Regression and Classification and XOR Networks with ANNs
-      - [x]  *Chapter 3* - Concolutional Neural Netowork   
-      - [x]  *Chapter 4* - Recurrent Neural Netowork
-      - [x]  *Chapter 5* - Restricted Boltzmann Machines and Auto Encoders
-      - [x]  *Chapter 6* - Semantic Segmentation and U-Net Architectures, GANs(generative Adversarial networks)
+
+Chapter | Topics 
+--------|---------
+*Chapter 2* |Regression and Classification and XOR Networks with ANNs
+*Chapter 3* |Concolutional Neural Netowork   
+*Chapter 4* | Recurrent Neural Netowork
+*Chapter 5* | Restricted Boltzmann Machines and Auto Encoders
+*Chapter 6* | Semantic Segmentation and U-Net Architectures, GANs(generative Adversarial networks)
 
 
-   
+
 - [x] Research Paper on Process Performance Optimization using Taylor Series Expectation approximation
 
 
