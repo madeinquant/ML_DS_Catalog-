@@ -1,7 +1,7 @@
 **ML_DS_Catalog- Index** 
 
 
-- [x] AV Rampaging DataHulk
+- [x] [AV Rampaging DataHulk](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/AV%20Rampaging%20DataHulk)
 
 - [x] DCGAN for MNIST
 
