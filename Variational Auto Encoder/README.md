@@ -6,18 +6,17 @@
 
 - [x] [VAE auto Encoders with 32x32 MNIST ](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN%20for%20MNIST)
 
-	**Original Images**
+**Original Images**
 
-	![Alt Text](Images/original_img.pdf)
+![Alt Text](Images/original_img.pdf)
 
-	**Reconstructed Images**
+**Reconstructed Images**
 
-	![Alt Text](Images/Reconstructed_img.pdf)
+![Alt Text](Images/Reconstructed_img.pdf)
 
 	**Images sampled with Guassian Noise ~ N(0,I)**
 
-	![Alt Text](Images/vae_images.pdf)
-
+![Alt Text](Images/vae_images.pdf)
 
 
 
