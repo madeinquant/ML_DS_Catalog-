@@ -8,15 +8,15 @@
 
 **Original Images**
 
-![Alt Text](Images/original_img.pdf)
+![Alt Text](Images/original_img.png)
 
 **Reconstructed Images**
 
-![Alt Text](Images/Reconstructed_img.pdf)
+![Alt Text](Images/Reconstructed_img.png)
 
 	**Images sampled with Guassian Noise ~ N(0,I)**
 
-![Alt Text](Images/vae_images.pdf)
+![Alt Text](Images/vae_images.png)
 
 
 
