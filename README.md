@@ -5,6 +5,8 @@
 
 - [x] [DCGAN for MNIST](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN%20for%20MNIST)
 
+- [x] [Variational Auto Encoder](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Variational%20Auto%20Encoder)
+
 - [x] [kaggle Carvana](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/kaggle%20Carvana)
 
 - [x] [Kaggle Intel & MobileODT Cervical Cancer Screening](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Kaggle%20Intel%20%26%20MobileODT%20Cervical%20Cancer%20Screening)
