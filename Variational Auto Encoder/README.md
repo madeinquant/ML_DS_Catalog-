@@ -2,9 +2,9 @@
    
  
 
-- [x] [VAE auto Encoders with 28x28 MNIST ](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/AV%20Rampaging%20DataHulk)
+- [x] [VAE auto Encoders with 28x28 MNIST ](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Variational%20Auto%20Encoder/vae_mnist.py)
 
-- [x] [VAE auto Encoders with 32x32 MNIST ](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN%20for%20MNIST)
+- [x] [VAE auto Encoders with 32x32 MNIST ](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Variational%20Auto%20Encoder/vae_mnist_32.py)
 
 **Original Images**
 
