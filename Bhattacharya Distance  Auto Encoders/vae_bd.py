@@ -1,5 +1,5 @@
 #import the required library
-# Variational Auto Encoders for Generative Modelling
+# Variational Auto Encoders for Generative Modeling using Bhattacharya Distance Regularizer
  
 import tensorflow.contrib.layers as lays
 import numpy as np
@@ -108,7 +108,7 @@ with tf.Session() as sess:
             _, c,c_1,c_2 = sess.run([train_op, loss,loss_1,latent_loss_1],feed_dict={ae_inputs: batch_arr,keep_prob:0.8})
             print('Epoch:',(ep + 1),' Batch:',batch_n,'loss:',c)
             print('Epoch:',(ep + 1),' Batch:',batch_n,'Reconstruction loss:',c_1)
-            print('Epoch:',(ep + 1),' Batch:',batch_n,'KL div loss:',c_2)
+            print('Epoch:',(ep + 1),' Batch:',batch_n,'BD div loss:',c_2)
             
                       
 
