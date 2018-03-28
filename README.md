@@ -21,7 +21,7 @@
 
 - [x] [Kaggle The Nature Conservancy Fisheries Monitoring](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Kaggle%20The%20Nature%20Conservancy%20Fisheries%20Monitoring)
 
-- [x] [SuperHeroes Identification from Product Images - Crowd Analytix](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Superheroes%20Crowd%20Analytics%20)
+- [x] [SuperHeroes Identification from Product Images - Crowd Analytix](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Superheroes%20Crowd%20Analytics%20)
 
 
 - [x] [*Pro Deep Learning with Tensorflow* book Code](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/pro-deep-learning-w-tensorflow-master)
