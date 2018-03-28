@@ -39,7 +39,7 @@ Dataset consists of product images like t-shirts, bags etc. with superhero graph
 By training an InceptionV3 model through Transfer Learning was able to achive a Private Leaderboard accuracy score of 81% which translated to 76% in the Private Leaderboard. The code can be 
 located at 
 
-- [x] [script.py ](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Superheroes%20Crowd%20Analytics/script.py)
+- [x] [script.py ](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Superheroes%20Crowd%20Analytics%20/script.py)
 
 
 
