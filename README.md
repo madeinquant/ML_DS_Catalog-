@@ -24,9 +24,9 @@
 - [x] [SuperHeroes Identification from Product Images - Crowd Analytix](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Superheroes%20Crowd%20Analytics%20)
 
 
-- [x] [Kaggle Toxic Comment Classification Challenge]
+- [x] [Kaggle Toxic Comment Classification Challenge](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge)
 
-- [x] [*Pro Deep Learning with Tensorflow* book Code](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge)
+- [x] [*Pro Deep Learning with Tensorflow* book Code]
 
 Chapter | Topics 
 --------|---------
