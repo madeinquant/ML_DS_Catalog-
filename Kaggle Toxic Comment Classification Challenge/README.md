@@ -29,17 +29,17 @@ You must create a model which predicts a probability of each type of toxicity fo
 **Scripts Description** 
 
 
-- [x] [Bi Drectional GRU with Fast text](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/AV%20Rampaging%20DataHulk)
+- [x] [Bi Drectional GRU with Fast text](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/exp_gru_clean.py)
 
-- [x] [Bi Directional GRU followed by Convolution](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/DCGAN%20for%20MNIST)
+- [x] [Bi Directional GRU followed by Convolution](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/cnnlstm.py)
 
-- [x] [Lightgbm using Latent Dirchlet ALlocation, Local Sensitive Hashing, latent Semantic Analysis, Sentiment Polarityt based features](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Variational%20Auto%20Encoder)
+- [x] [Lightgbm using Latent Dirchlet ALlocation, Local Sensitive Hashing, latent Semantic Analysis, Sentiment Polarityt based features](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/LDA%20LSA%20LSH%20features%20based%20Lightgbm.py)
 
-- [x] [Lightgbm on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Bhattacharya%20Distance%20%20Auto%20Encoders)
+- [x] [Lightgbm on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/lightgbm.py)
 
-- [x] [Factorization Machines FM_FTRL on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/kaggle%20Carvana)
+- [x] [Factorization Machines FM_FTRL on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/char_vec_ftrl.py)
 
-- [x] [Logistic Regression on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Kaggle%20Intel%20%26%20MobileODT%20Cervical%20Cancer%20Screening)
+- [x] [Logistic Regression on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/logistic%20with%20char%20 vector.py)
 
 
 **Results**
