@@ -39,7 +39,7 @@ You must create a model which predicts a probability of each type of toxicity fo
 
 - [x] [Factorization Machines FM_FTRL on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/char_vec_ftrl.py)
 
-- [x] [Logistic Regression on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/logistic%20with%20char%20 vector.py)
+- [x] [Logistic Regression on Char vectors](https://github.com/santanupattanayak1/ML_DS_Catalog-/blob/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge/Scripts%20/logistic%20with%20char%20vector.py)
 
 
 **Results**
