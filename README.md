@@ -26,6 +26,9 @@
 
 - [x] [Kaggle Toxic Comment Classification Challenge](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Kaggle%20Toxic%20Comment%20Classification%20Challenge)
 
+
+- [x] [Mutiple Minimum Support Apriori Algorithm](https://github.com/santanupattanayak1/ML_DS_Catalog-/tree/master/Multiple%20minimum%20Support%20Apriori%20Algorithm)
+
 - [x] [*Pro Deep Learning with Tensorflow* book Code]
 
 Chapter | Topics 
