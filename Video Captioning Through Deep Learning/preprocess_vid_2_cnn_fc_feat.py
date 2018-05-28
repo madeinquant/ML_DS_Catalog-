@@ -12,9 +12,8 @@ from tqdm import tqdm
 import numpy as np
 import cv2
 import os
-import argparse
-from keras.applications import VGG19
-from keras.models import Sequential, Model 
+from keras.applications.vgg16 import VGG16
+from keras.models import Model 
 
 class video_captioning:
     
@@ -22,11 +21,11 @@ class video_captioning:
         
         self.img_dim = 224
         self.channels = 3
-        self.video_dest = '/home/santanu/Downloads/Video Captioning/train-video/'
-        self.dir_feat = '/home/santanu/Downloads/Video Captioning/feat/'
+        self.video_dest = '/home/santanu/Downloads/Video Captioning/data/'
+        self.dir_feat = '/home/santanu/Downloads/Video Captioning/rgb_feats/'
         self.dest = '/home/santanu/Downloads/Video Captioning/dest_temp/'
-        self.batch_cnn = 64
-        self.frames_step = 40
+        self.batch_cnn = 128
+        self.frames_step = 80
         
         return None
         
@@ -44,19 +43,19 @@ class video_captioning:
                 shutil.rmtree(self.dest)
             os.makedirs(self.dest)
             video_to_frames_cmd = ["ffmpeg",
-                                       # (optional) overwrite output file if it exists
+                                       
                                        '-y',
-                                       '-i', video,  # input file
-                                       '-vf', "scale=400:300",  # input file
-                                       '-qscale:v', "2",  # quality for JPEG
+                                       '-i', video,  
+                                       '-vf', "scale=400:300", 
+                                       '-qscale:v', "2", 
                                        '{0}/%06d.jpg'.format(self.dest)]
             subprocess.call(video_to_frames_cmd,
                             stdout=ffmpeg_log, stderr=ffmpeg_log)
                         
 
     def model_cnn_load(self):
-         model = VGG19(weights = "imagenet", include_top=False, input_shape = (self.img_dim,self.img_dim,self.channels))
-         out = model.output
+         model = VGG16(weights = "imagenet", include_top=True, input_shape = (self.img_dim,self.img_dim,self.channels))
+         out = model.layers[-2].output
          model_final = Model(input=model.input,output=out)
          return model_final
          
@@ -76,7 +75,7 @@ class video_captioning:
         if not os.path.isdir(self.dir_feat):
             os.mkdir(self.dir_feat)
         #print("save video feats to %s" % (self.dir_feat))
-        video_list = glob.glob(os.path.join(self.video_dest, '*.mp4'))
+        video_list = glob.glob(os.path.join(self.video_dest, '*.avi'))
         #print video_list 
         
         for video in tqdm(video_list):
@@ -96,7 +95,7 @@ class video_captioning:
                 img = self.load_image(image_list[i])
                 images[i] = img
             images = np.array(images)
-            np.shape(images)
+            print np.shape(images)
             fc_feats = model.predict(images,batch_size=self.batch_cnn)
             img_feats = np.array(fc_feats)
             outfile = os.path.join(self.dir_feat, video_id + '.npy')
