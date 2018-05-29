@@ -29,7 +29,7 @@ class video_caption:
         self.train_text_path = self.path_prj + "video_corpus.csv"
         self.train_feat_path = self.path_prj + "rgb_feats/"
 
-        self.test_text_path = self.path_prj + "video_corpus.csv"
+        self.test_text_path = self.path_prj + "video_corpus_test.csv"
         self.test_feat_path = self.path_prj + "rgb_feats/"
         self.learning_rate = learning_rate
         self.epochs = epochs
@@ -116,6 +116,26 @@ class video_caption:
 
 
     def build_generator(self):
+        with tf.device("/cpu:0"):
+            self.word_emb = tf.Variable(tf.random_uniform([self.n_words, self.dim_hidden], -0.1, 0.1), name='word_emb')
+
+
+         #   self.lstm1 = rnn.BasicLSTMCell(self.dim_hidden, state_is_tuple=False)
+         #   self.lstm2 = rnn.BasicLSTMCell(self.dim_hidden, state_is_tuple=False)
+            self.lstm1 = tf.nn.rnn_cell.BasicLSTMCell(self.dim_hidden, state_is_tuple=False)
+            self.lstm2 = tf.nn.rnn_cell.BasicLSTMCell(self.dim_hidden, state_is_tuple=False)
+
+
+            self.encode_W = tf.Variable( tf.random_uniform([self.dim_image,self.dim_hidden], -0.1, 0.1), name='encode_W')
+            self.encode_b = tf.Variable( tf.zeros([self.dim_hidden]), name='encode_b')
+
+            self.word_emb_W = tf.Variable(tf.random_uniform([self.dim_hidden,self.n_words], -0.1,0.1), name='word_emb_W')
+            if self.bias_init_vector is not None:
+                self.word_emb_b = tf.Variable(self.bias_init_vector.astype(np.float32), name='word_emb_b')
+            else:
+                self.word_emb_b = tf.Variable(tf.zeros([self.n_words]), name='word_emb_b')
+
+
         video = tf.placeholder(tf.float32, [1, self.video_lstm_step, self.dim_image])
         video_mask = tf.placeholder(tf.float32, [1, self.video_lstm_step])
 
@@ -132,7 +152,7 @@ class video_caption:
         probs = []
         embeds = []
 
-        for i in range(0, self.n_video_lstm_step):
+        for i in range(0, self.video_lstm_step):
             if i > 0:
                 tf.get_variable_scope().reuse_variables()
 
@@ -379,15 +399,15 @@ class video_caption:
         
     
     def inference_(self,model_path='./models/model-100'):
-        self.test_data = self.get_video_test_data(self.test_text_path,self.test_feat_path)
+        self.test_data = self.get_test_data(self.test_text_path,self.test_feat_path)
         test_videos = self.test_data['video_path'].unique()
     
         self.idx2word = pd.Series(np.load(self.path_prj + "idx2word.npy").tolist())
     
         self.bias_init_vector = np.load(self.path_prj + "bias_init_vector.npy")
     
-        
-    
+       
+        self.n_words = len(self.idx2word)
         video_tf, video_mask_tf, caption_tf, probs_tf, last_embed_tf = self.build_generator()
     
         sess = tf.InteractiveSession()
@@ -403,7 +423,10 @@ class video_caption:
                 video_mask = np.ones((video_feat.shape[0], video_feat.shape[1]))
             else:
                 continue
-               
+                #shape_templete = np.zeros(shape=(1, n_frame_step, 4096), dtype=float )
+                #shape_templete[:video_feat.shape[0], :video_feat.shape[1], :video_feat.shape[2]] = video_feat
+                #video_feat = shape_templete
+                #video_mask = np.ones((video_feat.shape[0], n_frame_step))
     
             gen_word_idx = sess.run(caption_tf, feed_dict={video_tf:video_feat, video_mask_tf:video_mask})
             gen_words = self.idx2word[gen_word_idx]
@@ -438,7 +461,7 @@ if __name__ == '__main__':
     
     if sys.argv[1] == 'test':
         model = video_caption(cnn_feat_dim,h_dim,batch_size,lstm_steps,video_steps,out_steps,learning_rate,epochs,frame_step)
-        model.inference(model_path='./models/model_s2vt')
+        model.inference_(model_path='/home/santanu/Downloads/Video Captioning/model-90')
         
       
         
