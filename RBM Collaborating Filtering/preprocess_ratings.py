@@ -1,6 +1,4 @@
 """
-Created on Thu Jun  7 07:38:44 2018
-
 @author: santanu
 """
 
@@ -49,4 +47,7 @@ def process_file(infile_path):
 
 if __name__ == '__main__':
     process_file(path + infile)
+    
+    
+
 
